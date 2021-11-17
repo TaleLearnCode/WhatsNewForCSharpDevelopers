@@ -1,9 +1,9 @@
-# What’s New in C# 10 and .NET 6
+# What’s New for C# Developers
 
-![What's New in C# 10 and .NET 6](https://chadgreen.blob.core.windows.net/slides/WhatsNewInCSharp10AndDotNET6.jpg)
+![What's New for C# Developers](https://chadgreen.blob.core.windows.net/slides/WhatsNewForCSharpDevelopers.jpg)
 
 ## Abstract
-The Microsoft Language Design Team has been busy adding meaningful features to C# to help developers be more productive and produce better activities. During this session, we'll talk about the features that make up C# 10 and how you can apply them to your development efforts. Plus, we'll look at some key features of .NET 6.
+Microsoft has gone from multi-year releases of C# and .NET to annual releases, meaning there are always new things for C# to make their development efforts better and easier. During this session, we'll talk about the new features in C# 10 and talk about some exciting additions in .NET 6, Entity Framework Core, and ASP.NET Core.
 
 ## Elevator Pitch
 Learn about all the exiciting development features coming in C# 10 and .NET 6.
@@ -24,4 +24,5 @@ TBD
 ## Presentations
 | Event | Location | Date | Time | Room | Downloads |
 |-----------|:-----------:|-----------:|-----------:|-----------:|-----------:|
-| [Louisville .NET Meetup - November 2021](https://www.meetup.com/dotnet-virtual-user-group/events/281398492/) | Louisville, KY | November 17, 2021 | 7:00 pm EST | N/A | Available Afterwards |
+| [Louisville .NET Meetup - November 2021](https://www.meetup.com/dotnet-virtual-user-group/events/281398492/) | Louisville, KY | November 17, 2021 | 7:00 pm EST | N/A | [Slides](https://chadgreen.blob.core.windows.net/slides/WhatsNewForCSharpDevelopers-LouDotNet.pdf) |
+| [Tulsa .NET User Group](https://www.meetup.com/TulsaDevelopers-net/events/281762828/) | Tulsa, OK (Online) | November 30, 2021 | 6:15 CST | N/A | Available Afterwards |
