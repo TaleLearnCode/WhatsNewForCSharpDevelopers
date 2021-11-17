@@ -1,0 +1,13 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Diagnostics;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+global using System.ComponentModel.DataAnnotations;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;
+global using TaleLearnCode.WhatsNewForCSharepDevelopers.EFCore.MappingAttributes;
+global using TaleLearnCode.WhatsNewForCSharepDevelopers.EFCore.ModelBuildingImprovements.HasConversion;
+global using TaleLearnCode.WhatsNewForCSharepDevelopers.EFCore.ModelBuildingImprovements.ManyToMany;
+global using TaleLearnCode.WhatsNewForCSharepDevelopers.EFCore.ModelBuildingImprovements.Sparse;
+global using TaleLearnCode.WhatsNewForCSharepDevelopers.EFCore.PreConventionModelConfiguration;
+global using TaleLearnCode.WhatsNewForCSharepDevelopers.EFCore.TemporalTables;
