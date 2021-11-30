@@ -1,5 +1,5 @@
-﻿ExtendedPropertyPatterns();
-AssignmentAndDeclarationInDifferentDeconstruction();
+﻿//ExtendedPropertyPatterns();
+//AssignmentAndDeclarationInDifferentDeconstruction();
 InterpolatedStringHandler();
 
 static void ExtendedPropertyPatterns()

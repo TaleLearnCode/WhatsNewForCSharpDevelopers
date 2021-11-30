@@ -4,7 +4,7 @@
 	// Immutable record using positional parameters
 	public record WorldRegion(string Code, string Name);
 
-	// Immutable record using standartd property syntax
+	// Immutable record using standard property syntax
 	public record Country
 	{
 		public string Code { get; set; }
@@ -12,7 +12,7 @@
 		public WorldRegion WorldRegion { get; init; } = default;
 	}
 
-	// Muttable record
+	// Mutable record
 	public record CountryDivision
 	{
 		public string CountryCode { get; set; }

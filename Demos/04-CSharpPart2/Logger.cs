@@ -23,11 +23,11 @@
 			Console.WriteLine(message);
 		}
 
-		//public void LogMessage(LogLevel logLevel, LogInterpolatedStringHandler builder)
-		//{
-		//	if (EnabledLevel < logLevel) return;
-		//	Console.WriteLine(builder.GetFormattedText());
-		//}
+		public void LogMessage(LogLevel logLevel, LogInterpolatedStringHandler builder)
+		{
+			if (EnabledLevel < logLevel) return;
+			Console.WriteLine(builder.GetFormattedText());
+		}
 
 	}
 

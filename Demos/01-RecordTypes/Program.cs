@@ -17,7 +17,7 @@ namespace TaleLearnCode.WhatsNewForCSharpDevelopers.Demo01
 		{
 
 			/* ----------------------------------------------------------------------
-			 *           C# 9 - Positional Syntext for Property Definition
+			 *           C# 9 - Positional Syntax for Property Definition
 			 * ---------------------------------------------------------------------- */
 
 			PersonClass personClass = new()

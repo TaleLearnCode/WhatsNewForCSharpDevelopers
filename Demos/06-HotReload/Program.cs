@@ -1,8 +1,8 @@
 ﻿while (true)
-	ShowOffHotReload();
+	ShowOffHotReload("Hey");
 
-static void ShowOffHotReload()
+static void ShowOffHotReload(string doesThisWork)
 {
-	Console.WriteLine($"Hello Louisville {System.Diagnostics.Process.GetCurrentProcess().Id}");
+	Console.WriteLine($"Hello Louisville .NET {System.Diagnostics.Process.GetCurrentProcess().Id}");
 	Thread.Sleep(1000);
 }

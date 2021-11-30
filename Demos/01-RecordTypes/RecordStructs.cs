@@ -5,7 +5,7 @@
 	 * C# 10 - Immutable record struct using positional parameters
 	 * ---------------------------------------------------------------------- */
 
-	public readonly record struct Point1(double X, double Y, double Z);
+	public readonly record struct Point1(double X, double Y, double Z = 10);
 
 	/* ----------------------------------------------------------------------
 	 * C# 10 - Immutable record struct using standard property syntax

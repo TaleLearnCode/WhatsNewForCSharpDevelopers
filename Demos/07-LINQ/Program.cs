@@ -1,10 +1,10 @@
 ﻿CountryDivisionRepository countryDivisionRepository = new();
 
 LINQChunk(countryDivisionRepository);
-OrDefaultOverloads(countryDivisionRepository);
-LINQPriorityQueue(countryDivisionRepository);
-LINQMinMax();
-LINQSetOperations();
+//OrDefaultOverloads(countryDivisionRepository);
+//LINQPriorityQueue(countryDivisionRepository);
+//LINQMinMax();
+//LINQSetOperations();
 
 static void LINQChunk(CountryDivisionRepository countryDivisionRepository)
 {

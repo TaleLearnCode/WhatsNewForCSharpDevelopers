@@ -52,7 +52,7 @@ static void DateOnlyStorage()
 	Console.WriteLine(dayNumber);
 	// output: 648253
 
-	// Miliary Julian Dates
+	// Military Julian Dates
 	DateOnly firstDayOfYear = new(DateTime.Now.Year, 1, 1);
 	DateOnly today = new(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
 	Console.WriteLine($"{DateTime.Now.Year.ToString().Substring(2, 2)}{today.DayNumber - firstDayOfYear.DayNumber}");
@@ -128,7 +128,7 @@ static void TimeOnlyComparison()
 	if (now < new TimeOnly(12, 0))
 		Console.WriteLine("Good Morning!");
 	else if (now < new TimeOnly(18, 0))
-		Console.WriteLine("Good Afternon!");
+		Console.WriteLine("Good Afternoon!");
 	else
 		Console.WriteLine("Good Evening!");
 }
