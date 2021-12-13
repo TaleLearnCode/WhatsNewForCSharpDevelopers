@@ -6,7 +6,7 @@ public class CountryDivisionRepository : ICountryDivisionRepository
 {
 
 	/// <summary>
-	/// Retreives the list of <see cref="CountryDivision"/> from the data persistance layer.
+	/// Retrieves the list of <see cref="CountryDivision"/> from the data persistance layer.
 	/// </summary>
 	/// <param name="countryCode">Code of the Country whose divisions are to be returned.</param>
 	/// <returns>A <see cref="IEnumerable{CountryDivision}"/> representing the list of country divisions.</returns>

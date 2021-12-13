@@ -2,4 +2,4 @@
 
 ## 06 - Hot Reload
 
-**Hot Reload** renables you to skip rebuilding and restarting your app to view a new change - while your app is running - supporte din Visual Studio 2022 and from the .NET CLI, for C# and Visual Basic.
+**Hot Reload** enables you to skip rebuilding and restarting your app to view a new change - while your app is running - supported in Visual Studio 2022 and from the .NET CLI, for C# and Visual Basic.

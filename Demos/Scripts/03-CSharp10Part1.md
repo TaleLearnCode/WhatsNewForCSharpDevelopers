@@ -9,15 +9,15 @@
 * [Constant interpolated strings](#constant-interpolated-strings)
 ---
 
-### File-scoped namespace delcaration
+### File-scoped namespace declaration
 
-Many files contain code for a single namespace.  Starting in C# 10, you can include a namespace as a statement, followed by a semi-colon and withtou the curly brackets.
+Many files contain code for a single namespace.  Starting in C# 10, you can include a namespace as a statement, followed by a semi-colon and without the curly brackets.
 
 ~**File:** ReferenceTypes.Entities — Country~
 
 Demonstrate going from old namespace format to file-scoped declaration.
 
-This simplies the code and removes a level of nesting.  ONly one file-scoped namespace declaration is allowed, and it must come before any ttypes are declared.
+This simplies the code and removes a level of nesting.  ONly one file-scoped namespace declaration is allowed, and it must come before any types are declared.
 
 ---
 
@@ -25,16 +25,16 @@ This simplies the code and removes a level of nesting.  ONly one file-scoped nam
 
 #### Global using directives
 
-You can add the `global` modified to any `using` directive to instructe the compiler that the derective applies to all source files in the compilation.  This is typically all source files in a project.
+You can add the `global` modified to any `using` directive to instructs the compiler that the directive applies to all source files in the compilation.  This is typically all source files in a project.
 
 ~**File:** ReferenceTypes.Repositrory - Country~
 
-Point out how every class and interface has the `using TaleLearnCode.ReferenceTypes.Entities;` directrive.
+Point out how every class and interface has the `using TaleLearnCode.ReferenceTypes.Entities;` directive.
 
 Make the directive global.
 
 #### Implicit usings
-The implicit usings feature automatically adds `global using` directives for the type of project you are buidling.
+The implicit usings feature automatically adds `global using` directives for the type of project you are building.
 
 ~**File:** D:\Repos\TaleLearnCode\Presentations\WhatsNewForCSharpDevelopers\Demos\ReferenceTypes.Repository\obj\Debug\net6.0\ReferenceTypes.Repository.GlobalUsings.g.cs~
 
@@ -48,7 +48,7 @@ Talk about the `<ImplicitUsings>enable<ImplicitUsings>` setting.
 
 ### Constant interpolated strings
 
-in C# 10, `const` string may be initialized using string interpolation if all the placeholders are themselves constant strings.  String interpolation can create more readable constanst strings as yuou build constant string used in your application.
+in C# 10, `const` string may be initialized using string interpolation if all the placeholders are themselves constant strings.  String interpolation can create more readable constants strings as you build constant string used in your application.
 
 ~**File:** ReferenceTypes.Repository — CountryRepository.cs~
 
