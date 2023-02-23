@@ -24,6 +24,6 @@ TBD
 ## Presentations
 | Event | Location | Date | Time | Room | Downloads |
 |-----------|:-----------:|-----------:|-----------:|-----------:|-----------:|
+| Glennis Solutions (Private) | Louisville, KY | December 13, 2021 | 10:30 am EST | N/A | [Slides](presentations/WhatsNewForCSharpDevelopers-Glennis.pdf) |
+| [Tulsa .NET User Group](https://www.meetup.com/TulsaDevelopers-net/events/281762828/) | Tulsa, OK (Online) | November 30, 2021 | 6:15 CST | N/A | [Slides](presentations/WhatsNewForCSharpDevelopers-Tulsa.pdf) |
 | [Louisville .NET Meetup - November 2021](https://www.meetup.com/dotnet-virtual-user-group/events/281398492/) | Louisville, KY | November 17, 2021 | 7:00 pm EST | N/A | [Slides](https://chadgreen.blob.core.windows.net/slides/WhatsNewForCSharpDevelopers-LouDotNet.pdf) |
-| [Tulsa .NET User Group](https://www.meetup.com/TulsaDevelopers-net/events/281762828/) | Tulsa, OK (Online) | November 30, 2021 | 6:15 CST | N/A | Available Afterwards |
-| Glennis Solutions (Private) | Louisville, KY | December 13, 2021 | 10:30 am EST | N/A | Available Afterwards |
