@@ -13,7 +13,7 @@
 * [Pre-convention model configuration](#pre-convention-model-configuration)
 * [SQL Server Temporal Tables](#sql-server-temporal-tables)
     - [Improvements to scaffolding from an existing database](#improvements-to-scaffolding-from-an-existing-database)
-    - [Scafollding many-to-many relationships](#scafollding-many-to-many-relationships)
+    - [Scaffolding many-to-many relationships](#scafollding-many-to-many-relationships)
     - [Database Comments Are Scaffolded to Code Comments](#database-comments-are-scaffolded-to-code-comments)
 ---
 
@@ -31,11 +31,11 @@ The prevision and scale of a database column can not be configured using mapping
 ~**File:** MappingAttributes\Book.cs~
 
 #### EntityTypeConfigurationAttributee
-Strating with EF Core 6.0, an `EntityTypeConfigurationAttribute` can be placed on the entity type such that EF Core can find and use the apporpriate configuration.
+Starting with EF Core 6.0, an `EntityTypeConfigurationAttribute` can be placed on the entity type such that EF Core can find and use the appropriate configuration.
 
 ~**File:** MappingAttributes\BookConfiguration.cs~
 
-This attributes measnt that EF Core will use the specified `IEntityTypeConfiguration` implementation whenever the `Book2` entity type is included in a model.  The entity type is included in a model using one of the normal mechanisms.
+This attributes means that EF Core will use the specified `IEntityTypeConfiguration` implementation whenever the `Book2` entity type is included in a model.  The entity type is included in a model using one of the normal mechanisms.
 
 ---
 
@@ -43,7 +43,7 @@ This attributes measnt that EF Core will use the specified `IEntityTypeConfigura
 In addition to new mapping attributes, EF Core 6.0 includes several other improvements to the model building process.
 
 #### Support for SQL Sever sparse columns
-SQL Server sparse columns are ordinatry columns that aree optimized to store null values.
+SQL Server sparse columns are ordinary columns that are optimized to store null values.
 
 ~**File:** ModelBuildingImprovements\Sparse\ForumUser.cs~
 
@@ -54,7 +54,7 @@ SQL Server sparse columns are ordinatry columns that aree optimized to store nul
 SQL Sever Documentation: Sparse columns are ordinary columns that have an optimized storage for null values.  Sparse columns reduce the space requirements for null values at the cost of more overhead to retrive non-NULL values.  COnsider using sparse columns when space saved is at least 20 percent to 40 percent.
 
 #### Improvements to HasConversion API
-Before EF Core 6.0, the generic overlaods of the `HasConversion` methods used the generic parameter to specify *the type to convert to*.  Starting with EF Core 6.0, the generic type can instead specify a *value converter type*.  This can be one of the built-in value converters or it can be a custom value converter type.
+Before EF Core 6.0, the generic overloads of the `HasConversion` methods used the generic parameter to specify *the type to convert to*.  Starting with EF Core 6.0, the generic type can instead specify a *value converter type*.  This can be one of the built-in value converters or it can be a custom value converter type.
 
 #### Less configuration for many-to-many relationships
 Unambiguous many-to-many relationship between two entity types are discovered by convention.  Where necessary or if desired, the navigations can be set.
@@ -65,18 +65,18 @@ Unambiguous many-to-many relationship between two entity types are discovered by
 Due to problem outline below, the constructors for `ValueConverter` that allow conversation of nulls have been marked with `[EntityFrameworkInternal]` for the EF Core 6.0 release.  Using these constructors will now generate a build warning.
 
 * Value conversion to null in the store generates bad queries
-* Value converters do not handle cases where the database column has mulitple different values that convert to the same value
-* Allow value converterts to change nullability of columns
+* Value converters do not handle cases where the database column has multiple different values that convert to the same value
+* Allow value converters to change nullability of columns
 
-These are not trival issues and for the query issues they are not easy to deect.
+These are not trivial issues and for the query issues they are not easy to detect.
 
-One example of where converting nulls can be useful is when the database contains nulls, but the entity type wants to use some other default value for the property.  For example, where the dfault value is "Unknown" and you want Null to convert to that.
+One example of where converting nulls can be useful is when the database contains nulls, but the entity type wants to use some other default value for the property.  For example, where the default value is "Unknown" and you want Null to convert to that.
 
 ---
 
 ### Pre-convention model configuration
 
-Previous version of EF Core require that the mapping for every property of a given type is configured explicitly when that mapping differs from the default.  This includes "facets" like the maximum length of string and decimal precision, as well as value converstions.
+Previous version of EF Core require that the mapping for every property of a given type is configured explicitly when that mapping differs from the default.  This includes "facets" like the maximum length of string and decimal precision, as well as value conversions.
 
 This necessitated either:
 
@@ -84,7 +84,7 @@ This necessitated either:
 * A mapping attribute on each property
 * Explicit iteration over all properties of all entity types and use of the low-level metadata APIs when building the mode.
 
-EF Core 6.0 allows this mapping configuration to be specified once for a given type.  It will then be applied to all properties of that type in the model.  This is called "pre-convention model configuration", since it configures aspects of the model that are then used by the model building converntions.
+EF Core 6.0 allows this mapping configuration to be specified once for a given type.  It will then be applied to all properties of that type in the model.  This is called "pre-convention model configuration", since it configures aspects of the model that are then used by the model building conversions.
 
 ~**File:** PreConventionModelConfiguration\CustomerContext.cs~
 
@@ -92,7 +92,7 @@ EF Core 6.0 allows this mapping configuration to be specified once for a given t
 
 ### SQL Server Temporal Tables
 
-SQL Server temportal tables automatically keep track of all data ever stored in a table, even after that data has been updated or deleted.  This is achieved by creating a parallel "history table" into which timestamped historical data is stored whenever a change is made to the main table.  This allows historical data to be queried, such as for auditing, or resotred, such as for recover after accidental mutation or deletion.
+SQL Server temporal tables automatically keep track of all data ever stored in a table, even after that data has been updated or deleted.  This is achieved by creating a parallel "history table" into which timestamped historical data is stored whenever a change is made to the main table.  This allows historical data to be queried, such as for auditing, or restored, such as for recover after accidental mutation or deletion.
 
 EF Core now supports:
 
@@ -106,7 +106,7 @@ Restoring data from some point in the past
 ### Improvements to scaffolding from an existing database
 EF Core 6.0 includes several improvements when reverse engineering and EF model from an existing database.
 
-#### Scafollding many-to-many relationships
+#### Scaffolding many-to-many relationships
 EF Core 6.0 detects simple join tables and automatically generates a many-to-many mapping for them.
 
 #### Scaffold C# Nullable Reference TYpes

@@ -28,7 +28,7 @@ Splits the elements of a sequence into chunks of size at most `size`.
 
 Prior to .NET 6, you could use the `FirstOrDefault()` to get either the first element in a collection or the default for the types of the collection.  But what if you want to return something different than the default?
   
-Now there is an overload to `FirstOrDefault()` that allows us to specify  auctom value to return if the conditions are not met.
+Now there is an overload to `FirstOrDefault()` that allows us to specify a custom value to return if the conditions are not met.
 
 ---
 
@@ -40,8 +40,8 @@ Now there is an overload to `FirstOrDefault()` that allows us to specify  auctom
 
 ### MinBy() and MaxBy()
 
-.NET has had a way to get the minimum and maximum value for primitive types, but waht about getting the maximum value of a complex colection of classes?
+.NET has had a way to get the minimum and maximum value for primitive types, but what about getting the maximum value of a complex collection of classes?
 
 ### Set Operations
 
-.NET already had the `Union`, `Intersect`, `Except`, and `Distinct` set operations.  .NET 6 adds in `UnionBy`, `IntersectBy`, `ExceptBy`, and `DistinctBy` for set operattions against collections.
+.NET already had the `Union`, `Intersect`, `Except`, and `Distinct` set operations.  .NET 6 adds in `UnionBy`, `IntersectBy`, `ExceptBy`, and `DistinctBy` for set operations against collections.
